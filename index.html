@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Do I need an MDM?
+		</title>
+		<style>
+		@media (prefers-color-scheme: dark) {
+		html {
+			background-color: #000000; 
+		}
+		h1,h2,a {
+			color: white;
+		}
+		}
+		@media (prefers-color-scheme: light) {
+		html {
+			background-color: #ffffff; 
+		}
+		h1,h2,a {
+			color: black;
+		}
+		}
+		h1 {
+		text-align: center;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 2000%;
+		}
+		h2,a {
+		text-align: center;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		font-size: 100%;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>
+			YES.
+		</h1>
+		<h2 id='mdmContainer'>
+			Like this one maybe:
+		</h2>
+		<script>
+		// I actually had ChatGPT generate this Javascript for me. All I had to add was the DOM bit to append it to the right place.
+		var urls = {
+		"Mosyle": "https://mosyle.com",
+		"SimpleMDM": "https://simplemdm.com",
+		"Jamf": "https://jamf.com",
+		"Kandji": "https://kandji.io",
+		"Hexnode": "https://hexnode.com",
+		"Workspace One": "https://www.omnissa.com/products/workspace-one-unified-endpoint-management/",
+		"Microsoft Intune": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune",
+		"MaaS360": "https://www.ibm.com/products/maas360",
+		"Addigy": "https://addigy.com",
+		"Apple Business Essentials": "https://www.apple.com/business/essentials/",
+		"ScaleFusion": "https://scalefusion.com/apple-device-management"
+		};
+
+		var randomUrl = Object.keys(urls)[Math.floor(Math.random() * Object.keys(urls).length)];
+		var link = urls[randomUrl];
+
+		var a = document.createElement("a");
+		a.href = link;
+		a.innerHTML = randomUrl;
+		var element = document.getElementById("mdmContainer");
+		element.appendChild(a);
+		</script>
+	</body>
+</html>
