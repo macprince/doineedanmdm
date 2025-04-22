@@ -44,17 +44,19 @@
 		<script>
 		// I actually had ChatGPT generate this Javascript for me. All I had to add was the DOM bit to append it to the right place.
 		var urls = {
-		"Mosyle": "https://mosyle.com",
-		"SimpleMDM": "https://simplemdm.com",
-		"Jamf": "https://jamf.com",
-		"Kandji": "https://kandji.io",
-		"Hexnode": "https://hexnode.com",
-		"Workspace One": "https://www.omnissa.com/products/workspace-one-unified-endpoint-management/",
-		"Microsoft Intune": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune",
-		"MaaS360": "https://www.ibm.com/products/maas360",
-		"Addigy": "https://addigy.com",
-		"Apple Business Essentials": "https://www.apple.com/business/essentials/",
-		"ScaleFusion": "https://scalefusion.com/apple-device-management"
+			"Mosyle": "https://mosyle.com",
+			"SimpleMDM": "https://simplemdm.com",
+			"Jamf": "https://jamf.com",
+			"Kandji": "https://kandji.io",
+			"Hexnode": "https://hexnode.com",
+			"Workspace One": "https://www.omnissa.com/products/workspace-one-unified-endpoint-management/",
+			"Microsoft Intune": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune",
+			"MaaS360": "https://www.ibm.com/products/maas360",
+			"Addigy": "https://addigy.com",
+			"Apple Business Essentials": "https://www.apple.com/business/essentials/",
+			"ScaleFusion": "https://scalefusion.com/apple-device-management",
+			"nanoMDM": "https://github.com/micromdm/nanomdm",
+			"JumpCloud": "https://jumpcloud.com/platform/mdm"
 		};
 
 		var randomUrl = Object.keys(urls)[Math.floor(Math.random() * Object.keys(urls).length)];
