@@ -22,16 +22,38 @@
 			color: black;
 		}
 		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			overflow: hidden;
+		}
+
 		h1 {
-		text-align: center;
-		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-		font-size: 2000%;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			font-size: 2000%;
+			margin: 0;
 		}
 		h2,a {
 		text-align: center;
 		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 		font-size: 100%;
 		}
+		#mdmContainer {
+			position: fixed;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			margin: 0;
+			padding: 0.5rem 0;
+			z-index: 10;
+		}
+		#mdmContainer a { display: inline-block; }
 		</style>
 	</head>
 	<body>
